@@ -40,6 +40,15 @@
 				font-size: 30px;
 			}
 
+			.cover div.reminder{
+				width: 100%;
+				height: 100%;
+				position: float;
+				color: #000;
+				border-radius: 36px;
+				background-color: rgba(0, 0, 0, 0.36); !important;
+			}
+
 			.cover-back{
 
 			}
@@ -64,24 +73,49 @@
 				color: #FFF;
 				text-shadow: 10px 10px 9px #000;
 			}
-			.contents div{
+			.contents div.c-left{
+				width: 800px;
 				float: left;
 				margin-left: -200px;
 			}
-			.contents div h3{
-				margin-top: -100px;
+			.contents div.c-left h3{
+				margin-top: 60px;
 				color: #000;
 			}
-			.contents div a{
+			.contents div.c-left a{
 				display: block;
 				margin-top: 20px;
 				color: #000 !important;
 				text-align: left;
 				text-indent: 150px;
 			}
-			.contents div a:hover{
+			.contents div.c-left a:hover{
 				font-size: 39px;
 				text-shadow: 10px 10px 10px #333 !important;
+			}
+
+			.contents div.c-right{
+				float: right;
+				width: 300px;
+				height: 600px;
+				border: 1px solid #666;
+				box-shadow: 10px 10px 10px #333 !important;
+				color: #000 !important;
+			}
+
+			.contents div.c-right div{
+				width: 20%;
+				height: 60px;
+				margin-left: 39%;
+				background-color: #000;
+				font-size: 25px;
+				line-height: 60px;
+				color: #FFF;
+				border-radius: 60px;
+			}
+			.contents div.c-right div:hover{
+				cursor: pointer;
+				background-color: #F00;
 			}
 
 			.class h2{
@@ -119,6 +153,26 @@
 			}
 			.md-wxy pre code{
 			}
+			ul.title{
+				list-style: none;
+			}
+			ul.title li a{
+				color: #FFF !important;
+				font-size: 36px;
+			}
+			ul.title li:hover span{
+				color: #F00;
+			}
+			ul.title li:hover a{
+				color: #0F0 !important;
+			}
+			ul.technology{
+				float: left;
+				margin-left: -60px !important;
+			}
+			ul.technology li{
+				margin-left: 0px !important;
+			}
 		</style>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -143,12 +197,17 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-			<section class="cover" data-background="../images/cover.jpg" data-transition="linear" data-background-transition="slide">
+			<section id="reminderP" class="cover" data-background="../images/cover.jpg" data-transition="linear" data-background-transition="slide">
 				<h1>创刊</h1>
 				<p>站在我们的肩膀上，你可以看得更远</p>
 				<div class="footer">
 					<div class="issue">第一期</div>
 					<div class="publish">制作：实验班</div>
+				</div>
+				<div id="reminder" class="reminder">
+					<p>电脑按键盘上的上下左右键进行浏览</p>
+					<p>手持设备可以通过上下左右滑动来进行浏览</p>
+					<p>右下角有指示标志</p>
 				</div>
 			</section>
 			<section class="cover-back" data-background="../images/cover-back.jpg"  data-transition="linear" data-background-transition="slide">
@@ -167,20 +226,39 @@
 					<p>这是一本我们自己的周刊，记录下我们一起走过的痕迹，春天的花开，夏日的阵雨，秋韵的枫叶，冬季的白雪。等你回首时，再来回忆当年的温馨。</p>
 				</div>
 			</section>
-			<section class="contents" data-background="../images/contents.jpg">
-				<div class="c-right">
+			<section id="parent" class="contents" data-background="../images/contents.jpg">
+				<div class="c-left">
 					<h3>目录</h3>
 					<a href="#/4/0">&#2752 实验班动态</a>
-					<a href="#/5/0">&#2752 UBUNTU和LINUX下开发工具的安装</a>
+					<a href="#/5/0">&#2752 技术专题-搭建Linux下的开发环境</a>
 					<a href="#/6/0">&#2752 技术交流</a>
 					<a href="#/7/0">&#2752 资源推荐</a>
 					<a href="#/8/0">&#2752 程序员在路上</a>
+				</div>
+				<div id="closeContent" class="c-right">
+					<p>======☆======</p>
+					<p>温馨提示</p>
+					<p>======☆======</p>
+					<p>
+						自此页之后按键盘上的<span>→</span>或者向右滑动浏览下一栏目
+					</p>
+					<p>
+						自此页之后按键盘上的<span>↓</span>或者向下滑动浏览改栏目详细内容
+					</p>
+					<div id="close">关闭</div>
 				</div>
 			</section>
 
 			<section data-background="../images/class.jpg" data-transition="cube">
 				<section class="class">
+				<div>
+				</div>
 						<h2>实验班动态</h2>
+						<ul class="title">
+							<li><a href="#/4/1"><span>☺&nbsp</span>在$HOME下安装NODEJS NPM<span>™</span></a></li>
+							<li><a href="#/4/2"><span>☺&nbsp</span>LINUX修改终端用户名@...等 提示符<span>™</span></a></li>
+							<li><a href="#/4/4"><span>☺&nbsp</span>CCCCCC<span>™</span></a></li>
+						</ul>
 				</section>
 				<section>1</section>
 				<section>2</section>
@@ -191,7 +269,12 @@
 			</section>
 			<section data-background="">
 				<section class="chapter" data-background="../images/ubuntu.jpg" data-transition="linear">
-					<h2>ubuntu和linux下开发工具的安装</h2>
+					<h2>技术主题-『搭建Linux下的开发环境』</h2>
+					<ul class="title">
+						<li><a href="#/5/1"><span>☺&nbsp</span>在$HOME下安装NODEJS NPM<span>™</span></a></li>
+						<li><a href="#/5/2"><span>☺&nbsp</span>LINUX修改终端用户名@...等 提示符<span>™</span></a></li>
+						<li><a href="#/5/4"><span>☺&nbsp</span>****<span>™</span></a></li>
+					</ul>
 				</section>
 				<section class="md" data-markdown="../md/l-xjj.md"
 					data-separator="^\n\n\n"
@@ -328,6 +411,11 @@ fi
 			<section data-background="" data-transition="cube">
 				<section class="chapter" data-background="../images/technology.jpg">
 					<h2 class="technology">技术交流</h2>
+					<ul class="title technology">
+						<li><a href="#/6/1"><span>☼&nbsp</span>使用JS+FLASH实现COPY效果<span>™</span></a></li>
+						<li><a href="#/6/3"><span>☼&nbsp</span>CSS清除浮动<span>™</span></a></li>
+						<li><a href="#/6/5"><span>☼&nbsp</span>CSS滤镜<span>™</span></a></li>
+					</ul>
 				</section>
 				<section class="md" data-markdown="../md/t-wxy-1.md"
 					data-separator="^\n\n\n"
@@ -432,6 +520,14 @@ $(document).ready(function(){
 			<section data-background="" data-transition="cube">
 				<section data-background="../images/resources.jpg">
 					<h2>资源推荐</h2>
+					<ul class="title">
+						<li><a href="#/7/1"><span>➢&nbsp</span>Mac下LAMP开发环境搭建<span>™</span></a></li>
+						<li><a href="#/7/1"><span>➢&nbsp</span>CI框架linux下apache中的配置<span>™</span></a></li>
+						<li><a href="#/7/1"><span>➢&nbsp</span>Google Inbox 是如何跨平台重用代码的<span>™</span></a></li>
+						<li><a href="#/7/1"><span>➢&nbsp</span>5个实用Web开发工具<span>™</span></a></li>
+						<li><a href="#/7/2"><span>➢&nbsp</span>关于程序员工作效率的文章<span>™</span></a></li>
+						<li><a href="#/7/2"><span>➢&nbsp</span>HTML5标准尘埃落定，CODE开源弹重装出发<span>™</span></a></li>
+					</ul>
 				</section>
 				<section>
 					<div class="resources">
@@ -499,6 +595,7 @@ $(document).ready(function(){
     				margin: 0.1,
     				minScale: 0.2,
     				maxScale: 1.0,
+    				mouseWheel: false,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
@@ -517,6 +614,18 @@ $(document).ready(function(){
 					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
+			var closeBtn = document.getElementById("close");
+			var closeContent = document.getElementById("closeContent");
+			var parent = document.getElementById("parent");
+			var reminder = document.getElementById("reminder");
+			var reminderP = document.getElementById("reminderP");
+			closeBtn.onclick = function(){
+				parent.removeChild(closeContent);
+			}
+			setTimeout(function(){
+				reminderP.removeChild(reminder);
+			}, 5000);
 		</script>
 
 	</body>
