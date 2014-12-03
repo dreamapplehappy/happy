@@ -16,165 +16,10 @@
 
 		<link rel="stylesheet" href="../css/reveal.min.css">
 		<link rel="stylesheet" href="../css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="../css/CSS-1.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="../lib/css/zenburn.css">
-
-		<style>
-			.cover h1{
-				margin-top: -320px;
-				margin-left: 200px;
-				color: #000;
-				width: 100px;
-				font-size: 90px;
-				text-shadow: 10px 10px 20px #333;
-			}
-			.cover p{
-				color: black;
-			}
-			.cover div.footer{
-				position: absolute;
-				color: #000;
-				bottom: -300px;
-				left: 200px;
-				font-size: 30px;
-			}
-
-			.cover div.reminder{
-				width: 100%;
-				height: 100%;
-				position: float;
-				color: #000;
-				border-radius: 36px;
-				background-color: rgba(0, 0, 0, 0.36); !important;
-			}
-
-			.cover-back{
-
-			}
-			.cover-back h6{
-				font-size: 30px;
-				text-align: left;
-				color: #000;
-			}
-
-			.editor-note{
-			}
-
-			.editor-note h3{
-				color: #FFF;
-				text-shadow: 10px 10px 10px #000;
-			}
-
-			.editor-note div p{
-				float: left;
-				text-align: left;
-				text-indent: 36px;
-				color: #FFF;
-				text-shadow: 10px 10px 9px #000;
-			}
-			.contents div.c-left{
-				width: 800px;
-				float: left;
-				margin-left: -200px;
-			}
-			.contents div.c-left h3{
-				margin-top: 60px;
-				color: #000;
-			}
-			.contents div.c-left a{
-				display: block;
-				margin-top: 20px;
-				color: #000 !important;
-				text-align: left;
-				text-indent: 150px;
-			}
-			.contents div.c-left a:hover{
-				font-size: 39px;
-				text-shadow: 10px 10px 10px #333 !important;
-			}
-
-			.contents div.c-right{
-				float: right;
-				width: 300px;
-				height: 600px;
-				border: 1px solid #666;
-				box-shadow: 10px 10px 10px #333 !important;
-				color: #000 !important;
-			}
-
-			.contents div.c-right div{
-				width: 20%;
-				height: 60px;
-				margin-left: 39%;
-				background-color: #000;
-				font-size: 25px;
-				line-height: 60px;
-				color: #FFF;
-				border-radius: 60px;
-			}
-			.contents div.c-right div:hover{
-				cursor: pointer;
-				background-color: #F00;
-			}
-
-			.class h2{
-				margin-top: 200px;
-			}
-			.chapter h2{
-				margin-top: 200px;
-			}
-			.chapter h2.technology{
-				margin-top: 200px;
-				float: right;
-			}
-			.programmer h2{
-				margin-top: -200px;
-				color: #000;
-			}
-
-			.md{
-				text-align: left !important;
-				font-size: 25px !important;
-			}
-			pre.wxy{
-				width: 100% !important;
-				height: 100% !important;
-			}
-			.code p{
-				text-align: left !important;
-			}
-			pre code{
-				font-size: 25px !important;
-				line-height: 25px !important;
-			}
-			div.resources p{
-				text-align: left;
-			}
-			.md-wxy pre code{
-			}
-			ul.title{
-				list-style: none;
-			}
-			ul.title li a{
-				color: #FFF !important;
-				font-size: 36px;
-			}
-			ul.title li:hover span{
-				color: #F00;
-			}
-			ul.title li:hover a{
-				color: #0F0 !important;
-			}
-			ul.technology{
-				float: left;
-				margin-left: -60px !important;
-			}
-			ul.technology li{
-				margin-left: 0px !important;
-			}
-		</style>
-
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
 			if( window.location.search.match( /print-pdf/gi ) ) {
@@ -201,8 +46,8 @@
 				<h1>创刊</h1>
 				<p>站在我们的肩膀上，你可以看得更远</p>
 				<div class="footer">
-					<div class="issue">第一期</div>
-					<div class="publish">制作：实验班</div>
+					<div class="issue">试刊</div>
+					<div class="publish">互联网创新实验班</div>
 				</div>
 				<div id="reminder" class="reminder">
 					<p>电脑按键盘上的上下左右键进行浏览</p>
@@ -211,10 +56,9 @@
 				</div>
 			</section>
 			<section class="cover-back" data-background="../images/cover-back.jpg"  data-transition="linear" data-background-transition="slide">
-				<h6>编委会：罗鹏展 谢俊杰</h6>
+				<h6>编委会：罗鹏展 谢俊杰 张旭</h6>
 				<h6>责任编辑：罗鹏展</h6>
 				<h6>封面设计：罗鹏展</h6>
-				<h6>活动负责：张旭</h6>
 				<h6>期数：第一期</h6>
 				<h6>出刊日期：2014-11-21</h6>
 				<h6>服务邮箱：2451731631@qq.com</h6>
@@ -249,23 +93,23 @@
 				</div>
 			</section>
 
-			<section data-background="../images/class.jpg" data-transition="cube">
-				<section class="class">
+			<section data-background="#999">
+				<section class="class" data-background="../images/class.jpg" data-transition="cube">
 				<div>
 				</div>
 						<h2>实验班动态</h2>
 						<ul class="title">
-							<li><a href="#/4/1"><span>☺&nbsp</span>在$HOME下安装NODEJS NPM<span>™</span></a></li>
-							<li><a href="#/4/2"><span>☺&nbsp</span>LINUX修改终端用户名@...等 提示符<span>™</span></a></li>
-							<li><a href="#/4/4"><span>☺&nbsp</span>CCCCCC<span>™</span></a></li>
+							<li><a href="#/4/1"><span>☺&nbsp</span>活动海报<span>™</span></a></li>
+							<li><a href="#/4/2"><span>☺&nbsp</span>实验班分享会总结<span>™</span></a></li>
 						</ul>
 				</section>
-				<section>1</section>
-				<section>2</section>
-				<section>3</section>
-				<section>4</section>
-				<section>5</section>
-				<section>6</section>
+				<section data-background="../images/activity.jpg" data-transition="cube" data-background-size="600px" data-background-repeat=""></section>
+				<section class="md" data-markdown="../md/a-dpf.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
 			</section>
 			<section data-background="">
 				<section class="chapter" data-background="../images/ubuntu.jpg" data-transition="linear">
@@ -273,7 +117,7 @@
 					<ul class="title">
 						<li><a href="#/5/1"><span>☺&nbsp</span>在$HOME下安装NODEJS NPM<span>™</span></a></li>
 						<li><a href="#/5/2"><span>☺&nbsp</span>LINUX修改终端用户名@...等 提示符<span>™</span></a></li>
-						<li><a href="#/5/4"><span>☺&nbsp</span>****<span>™</span></a></li>
+						<li><a href="#/5/4"><span>☺&nbsp</span>CORDOVA安装<span>™</span></a></li>
 					</ul>
 				</section>
 				<section class="md" data-markdown="../md/l-xjj.md"
@@ -288,125 +132,78 @@
 					data-notes="^Note:"
 					data-charset="utf-8">
 				</section>
-				<section>
-				<p>代码如下：</p>
-				<hr />
-					<pre class="wxy">
-						<code data-trim>
-# ~/.bashrc: executed by bash(1) for non-login shells.  
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)  
-# for examples  
-  
-# If not running interactively, don't do anything  
-[ -z "$PS1" ] && return  
-  
-# don't put duplicate lines in the history. See bash(1) for more options  
-# ... or force ignoredups and ignorespace  
-HISTCONTROL=ignoredups:ignorespace  
-  
-# append to the history file, don't overwrite it  
-shopt -s histappend  
-  
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)  
-HISTSIZE=1000  
-HISTFILESIZE=2000  
-  
-# check the window size after each command and, if necessary,  
-# update the values of LINES and COLUMNS.  
-shopt -s checkwinsize  
-  
-# make less more friendly for non-text input files, see lesspipe(1)  
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"  
-  
-# set variable identifying the chroot you work in (used in the prompt below)  
-if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then  
-    debian_chroot=$(cat /etc/debian_chroot)  
-fi  
-  
-# set a fancy prompt (non-color, unless we know we "want" color)  
-case "$TERM" in  
-    xterm-color) color_prompt=yes;;  
-esac  
-  
-# uncomment for a colored prompt, if the terminal has the capability; turned  
-# off by default to not distract the user: the focus in a terminal window  
-# should be on the output of commands, not on the prompt  
-#force_color_prompt=yes  
-  
-if [ -n "$force_color_prompt" ]; then  
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then  
-    # We have color support; assume it's compliant with Ecma-48  
-    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such  
-    # a case would tend to support setf rather than setaf.)  
-    color_prompt=yes  
-    else  
-    color_prompt=  
-    fi  
-fi  
-  
-if [ "$color_prompt" = yes ]; then  
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '  
-else  
-#    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '  
-    PS1='${debian_chroot:+($debian_chroot)}\W\$ '  
-fi  
-  
-unset color_prompt force_color_prompt  
-  
-# If this is an xterm set the title to user@host:dir  
-case "$TERM" in  
-xterm*|rxvt*)  
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"  
-    ;;  
-*)  
-    ;;  
-esac  
-  
-# enable color support of ls and also add handy aliases  
-if [ -x /usr/bin/dircolors ]; then  
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"  
-    alias ls='ls --color=auto'  
-    #alias dir='dir --color=auto'  
-    #alias vdir='vdir --color=auto'  
-  
-    alias grep='grep --color=auto'  
-    alias fgrep='fgrep --color=auto'  
-    alias egrep='egrep --color=auto'  
-fi  
-  
-# some more ls aliases  
-alias ll='ls -alF'  
-alias la='ls -A'  
-alias l='ls -CF'  
-  
-# Add an "alert" alias for long running commands.  Use like so:  
-#   sleep 10; alert  
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'  
-  
-# Alias definitions.  
-# You may want to put all your additions into a separate file like  
-# ~/.bash_aliases, instead of adding them here directly.  
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.  
-  
-if [ -f ~/.bash_aliases ]; then  
-    . ~/.bash_aliases  
-fi  
-  
-# enable programmable completion features (you don't need to enable  
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile  
-# sources /etc/bash.bashrc).  
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then  
-    . /etc/bash_completion  
-fi  
-						</code>
-					</pre>
+				<section class="md" data-markdown="../md/l-wxy-2.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
 				</section>
-				<section>1</section>
-				<section>2</section>
-				<section>3</section>
-				<section>4</section>
-				<section>5</section>
-				<section>6</section>
+				<section class="md" data-markdown="../md/l-ww-1.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-2.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-3.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-4.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-5.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-6.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-7.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-8.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-9.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-10.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="../md/l-ww-11.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
 			</section>
 			<section data-background="" data-transition="cube">
 				<section class="chapter" data-background="../images/technology.jpg">
@@ -510,12 +307,6 @@ $(document).ready(function(){
 					data-notes="^Note:"
 					data-charset="utf-8">
 				</section>
-				<section></section>
-				<section>2</section>
-				<section>3</section>
-				<section>4</section>
-				<section>5</section>
-				<section>6</section>
 			</section>
 			<section data-background="" data-transition="cube">
 				<section data-background="../images/resources.jpg">
@@ -531,48 +322,64 @@ $(document).ready(function(){
 				</section>
 				<section>
 					<div class="resources">
-						<p><a href="http://my.oschina.net/plusman/blog/324016">Mac下LAMP开发环境搭建</a></p>
+						<p><a href="http://my.oschina.net/plusman/blog/324016" target="_blank">Mac下LAMP开发环境搭建</a></p>
 						<p>【吴伟推荐】推荐理由：值得一看</p>
 						<hr />
 					</div>
 					<div class="resources">
-						<p><a href="http://my.oschina.net/wwzlp/blog/349122">CI框架linux下apache中的配置</a></p>
+						<p><a href="http://my.oschina.net/wwzlp/blog/349122" target="_blank">CI框架linux下apache中的配置</a></p>
 						<p>【吴伟推荐】推荐理由：值得一看</p>
 						<hr />
 					</div>
 					<div class="resources">
-						<p><a href="http://coolshell.cn/articles/12136.html">Google Inbox 是如何跨平台重用代码的</a></p>
+						<p><a href="http://coolshell.cn/articles/12136.html" target="_blank">Google Inbox 是如何跨平台重用代码的</a></p>
 						<p>【谢俊杰推荐】推荐理由：值得一看</p>
 						<hr />
 					</div>
 					<div class="resources">
-						<p><a href="http://pan.baidu.com/s/1mgqmIaG">5个实用Web开发工具</a></p>
+						<p><a href="http://pan.baidu.com/s/1mgqmIaG" target="_blank">5个实用Web开发工具</a></p>
 						<p>【陈浩推荐】推荐理由：值得一看</p>
 						<hr />
 					</div>
 				</section>
 				<section>
 					<div class="resources">
-						<p><a href="http://www.php100.com/html/it/focus/2014/1029/7653.html">关于程序员工作效率的文章</a></p>
+						<p><a href="http://www.php100.com/html/it/focus/2014/1029/7653.html" target="_blank">关于程序员工作效率的文章</a></p>
 						<p>【李金祥推荐】推荐理由：值得一看</p>
 						<hr />
 					</div>
 					<div class="resources">
-						<p><a href="http://code.csdn.net/news/2822521">HTML5标准尘埃落定，CODE开源弹重装出发</a></p>
+						<p><a href="http://code.csdn.net/news/2822521" target="_blank">HTML5标准尘埃落定，CODE开源弹重装出发</a></p>
 						<p>【黄可庆推荐】推荐理由：值得一看</p>
 						<hr />
 					</div>
 				</section>
 			</section>
-			<section data-background="" data-transition="cube">
+			<section data-transition="cube">
 				<section class="programmer" data-background="../images/programmer.jpg">
 					<h2>程序员在路上</h2>
 				</section>
-				<section>2</section>
-				<section>3</section>
+				<section class="c" data-markdown="../md/c-1.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8"
+					data-background="../images/programmer-back-1.jpg">
+				</section>
+				<section class="c" data-markdown="../md/c-2.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8"
+					data-background="../images/programmer-back-2.jpg">
+				</section>
 			</section>
-			<section>
-				Thanks!
+			<section class="end" data-background="../images/end.jpg">
+				<div>
+					<p>THANKS!</p>
+					<p>投稿邮箱：2451731631@qq.com</p>
+					<p>咨询邮箱：2451731631@qq.com</p>
+				</div>
 			</section>
 			</div>
 

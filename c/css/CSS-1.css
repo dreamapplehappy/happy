@@ -1,0 +1,160 @@
+.cover h1{
+				margin-top: -320px;
+				margin-left: 200px;
+				color: #000;
+				width: 100px;
+				font-size: 90px;
+				text-shadow: 10px 10px 20px #333;
+			}
+			.cover p{
+				color: black;
+			}
+			.cover div.footer{
+				position: absolute;
+				color: #000;
+				bottom: -300px;
+				left: 200px;
+				font-size: 30px;
+			}
+
+			.cover div.reminder{
+				width: 100%;
+				height: 100%;
+				position: float;
+				color: #000;
+				border-radius: 36px;
+				background-color: rgba(0, 0, 0, 0.36); !important;
+			}
+
+			.cover-back{
+
+			}
+			.cover-back h6{
+				font-size: 30px;
+				text-align: left;
+				color: #000;
+			}
+
+			.editor-note{
+			}
+
+			.editor-note h3{
+				color: #FFF;
+				text-shadow: 10px 10px 10px #000;
+			}
+
+			.editor-note div p{
+				float: left;
+				text-align: left;
+				text-indent: 36px;
+				color: #FFF;
+				text-shadow: 10px 10px 9px #000;
+			}
+			.contents div.c-left{
+				width: 800px;
+				float: left;
+				margin-left: -200px;
+			}
+			.contents div.c-left h3{
+				margin-top: 60px;
+				color: #000;
+			}
+			.contents div.c-left a{
+				display: block;
+				margin-top: 20px;
+				color: #000 !important;
+				text-align: left;
+				text-indent: 150px;
+			}
+			.contents div.c-left a:hover{
+				font-size: 39px;
+				text-shadow: 10px 10px 10px #333 !important;
+			}
+
+			.contents div.c-right{
+				float: right;
+				width: 300px;
+				height: 600px;
+				border: 1px solid #666;
+				box-shadow: 10px 10px 10px #333 !important;
+				color: #000 !important;
+			}
+
+			.contents div.c-right div{
+				width: 20%;
+				height: 60px;
+				margin-left: 39%;
+				background-color: #000;
+				font-size: 25px;
+				line-height: 60px;
+				color: #FFF;
+				border-radius: 60px;
+			}
+			.contents div.c-right div:hover{
+				cursor: pointer;
+				background-color: #F00;
+			}
+
+			.class h2{
+				margin-top: 200px;
+			}
+			.chapter h2{
+				margin-top: 200px;
+			}
+			.chapter h2.technology{
+				margin-top: 200px;
+				float: right;
+			}
+			.programmer h2{
+				margin-top: -200px;
+				color: #000;
+			}
+
+			.md{
+				text-align: left !important;
+				font-size: 25px !important;
+			}
+			pre.wxy{
+				width: 100% !important;
+				height: 100% !important;
+			}
+			.code p{
+				text-align: left !important;
+			}
+			pre code{
+				font-size: 25px !important;
+				line-height: 25px !important;
+			}
+			div.resources p{
+				text-align: left;
+			}
+			.md-wxy pre code{
+			}
+			ul.title{
+				list-style: none;
+			}
+			ul.title li a{
+				color: #FFF !important;
+				font-size: 36px;
+			}
+			ul.title li:hover span{
+				color: #F00;
+			}
+			ul.title li:hover a{
+				color: #0F0 !important;
+			}
+			ul.technology{
+				float: left;
+				margin-left: -60px !important;
+			}
+			ul.technology li{
+				margin-left: 0px !important;
+			}
+			.end div{
+				float: left;
+				color: #000 !important;
+			}
+			.c{
+				color: #000 !important;
+				font-size: 30px !important;
+			}
