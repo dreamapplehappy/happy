@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>&#2368 分享你想分享的</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.cover h1{
+				margin-top: -320px;
+				margin-left: 200px;
+				color: #FFF;
+				width: 100px;
+				font-size: 90px;
+				text-shadow: 10px 10px 20px #333;
+			}
+			.cover p{
+				color: #FFF;
+				position: 300px 400px;
+			}
+			.cover div.footer{
+				position: absolute;
+				color: #FFF;
+				bottom: -300px;
+				left: 200px;
+				font-size: 30px;
+			}
+
+			.cover-back{
+				position: relative;
+				float: left;
+			}
+			.cover-back h6{
+				font-size: 30px;
+				text-align: left;
+				color: #000;
+				position: 600px 200px;
+			}
+
+			.editor-note{
+			}
+
+			.editor-note h3{
+				color: #FFF;
+				text-shadow: 10px 10px 10px #000;
+			}
+
+			.editor-note div p{
+				float: left;
+				text-align: left;
+				text-indent: 36px;
+				color: #FFF;
+				text-shadow: 10px 10px 9px #000;
+			}
+			.contents div{
+				float: left;
+				margin-left: -200px;
+			}
+			.contents div h3{
+				margin-top: -100px;
+				color: #000;
+			}
+			.contents div a{
+				display: block;
+				margin-top: 20px;
+				color: #000 !important;
+				text-align: left;
+				text-indent: 150px;
+			}
+			.contents div a:hover{
+				font-size: 39px;
+				text-shadow: 10px 10px 10px #333 !important;
+			}
+
+			.class h2{
+				margin-top: 200px;
+			}
+			.chapter h2{
+				margin-top: 200px;
+			}
+			.chapter h2.technology{
+				margin-top: 200px;
+				float: right;
+			}
+			.programmer h2{
+				margin-top: -200px;
+				color: #000;
+			}
+
+			.md{
+				text-align: left !important;
+				font-size: 25px !important;
+			}
+			pre.wxy{
+				width: 100% !important;
+				height: 100% !important;
+			}
+			.code p{
+				text-align: left !important;
+			}
+			pre code{
+				font-size: 25px !important;
+				line-height: 25px !important;
+			}
+			div.resources p{
+				text-align: left;
+			}
+			
+		</style>
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<section class="cover" data-background="images/cover.jpg" data-transition="linear" data-background-transition="slide">
+				<h1 >创刊</h1>
+				<p >站在我们的肩膀上,你可以看得更远</p>
+				<div class="footer" >
+					<div class="issue">第三期</div>
+					<div class="publish">制作：软件工程创新实验班</div>
+				</div>
+			</section>
+			<section class="cover-back" data-background="images/2.jpg"  data-transition="linear" data-background-transition="slide">
+				<h6>编委会：罗鹏展 谢俊杰</h6>
+				<h6>责任编辑：白林林</h6>
+				<h6>封面设计：白林林</h6>
+				<h6>活动负责：白林林</h6>
+				<h6>期数：第三期</h6>
+				<h6>出刊日期：2014-12-7</h6>
+				<h6>服务邮箱：2451731631@qq.com</h6>
+			</section>
+			<section class="editor-note" data-background="images/editor-note.jpg" data-transition="linear" data-background-transition="slide">
+				<h3>编者寄语</h3>
+				<div>
+					<p>如微风拂过湖面，荡起微微的涟漪，偶然溅起的水花，映出彩虹的美丽。跃于纸面的字符，闪耀着的光芒迷离，自你手下诞生的音符，终将谱成最华美的乐集。</p>
+					<p>这是一本我们自己的周刊，记录下我们一起走过的痕迹，春天的花开，夏日的阵雨，秋韵的枫叶，冬季的白雪。等你回首时，再来回忆当年的温馨。</p>
+				</div>
+			</section>
+
+			<section class="contents" data-background="images/contents.jpg">
+				<div class="c-right">
+					<h3>目录</h3>
+					<a href="#/4/0">&#2752 实验班动态</a>
+					<a href="#/5/0">&#2752 linux学习笔记</a>
+					<a href="#/6/0">&#2752 技术交流</a>
+					<a href="#/7/0">&#2752 资源推荐</a>
+					<a href="#/8/0">&#2752 程序员在路上</a>
+				</div>
+			</section>
+
+			<section  data-transition="cube">
+				<section class="class" data-background="images/class.jpg">
+						<h2>团队项目计划</h2>
+				</section>
+				
+				<section data-markdown>
+					<script type="text/template">
+###图书管理系统项目计划
+---
+###12.1-12.7
+
+- 移动端大重构结束
+- 网页端开发人员较为繁忙下周开干
+- api告一段落
+- 移动端管理员平台雏形制作
+
+###12.8-12.14
+
+- 网页端先完成二维码功能供移动端管理员平台测验
+- 网页端按照新的api文档修改功能
+- 移动端查漏补缺并开始美化
+
+					</script>
+					
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### 王雪莹团队项目
+
+---
+
+### V1.0
+1. 页面的总体构思
+2. 登陆登出页面
+3. 完成了主页
+4. 完成了个人页面
+
+<br />
+##### 本周的工作都是由前端刘铁实现
+##### 那么王雪莹干嘛去了呢 
+##### 在android坑中奋力的向上爬。。
+    </script>
+					
+
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+###Sharey项目组第12周项目进度总结
+---
+
+### V1.0
+
+1. 项目的链接投稿完成了评论功能
+2. 修复了已知的bug
+3. 前端，工作平台由转到linux
+4. 完成了个人页面
+
+<br />
+**组员干嘛了** 
+
+- 谢俊杰 ：搞定评论功能，具体 [查看](http://sharey.birdgg.me) 
+- 白琳琳 ：前端，工作平台由转到linux
+- 彭雅丽 ：前端，工作平台由转到linux
+- 李金祥 ：专注于android开发
+- 钟云昶 ：学习Meteor 文档 ，撸出一个demo。
+- 罗鹏展 ：AngularJS
+    </script>		
+				</section>
+			</section>
+
+			<section data-background="">
+				<section class="chapter" data-background="images/ubuntu.jpg" data-transition="linear">
+					<h2>linux学习笔记</h2>
+				</section>
+				<section data-markdown="md/linux-z.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="md/linux-z-1.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="md/linux-z-2.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				
+				<section class="md" data-markdown="md/linux-l.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="md/linux-l-1.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="md/linux-l-2.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				
+			</section>
+			<section data-background="" data-transition="cube">
+				<section class="chapter" data-background="images/technology.jpg">
+					<h2 class="technology">技术交流</h2>
+				</section>
+				<section data-markdown="md/仿QQ滑动删除.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section data-markdown="md/仿QQ滑动删除-1.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section data-markdown="md/仿QQ滑动删除-2.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section data-markdown="md/仿QQ滑动删除-3.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section data-markdown="md/仿QQ滑动删除-4.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section data-markdown="md/仿QQ滑动删除-5.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section data-markdown="md/sublime.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="md/sublime-1.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+			</section>
+			<section data-background="" data-transition="cube">
+				<section data-background="images/resources.jpg">
+					<h2>资源推荐</h2>
+				</section>
+				<section>
+					<div class="resources">
+						<p><a href="http://bubkoo.com/2014/01/19/angular/make-your-own-angular-part-1-scopes-and-digest/">angularJS的scopes 和 digest【中文】</a></p>
+						<p>【罗鹏展推荐】推荐理由：非常有助于学习angularJS</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://teropa.info/blog/2013/11/03/make-your-own-angular-part-1-scopes-and-digest.html">angularJS的scopes 和 digest【英文】</a></p>
+						<p>【罗鹏展推荐】推荐理由：非常有助于学习angularJS</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://www.2cto.com/kf/201308/240294.html">js函数集</a></p>
+						<p>【黄可庆推荐】推荐理由：值得一看</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://www.cnblogs.com/yuzhongwusan/archive/2012/12/11/2812849.html">jsonp详解</a></p>
+						<p>【黄可庆推荐】推荐理由：灵活解决js跨域问题 </p>
+						<hr />
+					</div>
+				</section>
+				<section>
+					<div class="resources">
+						<p><a href="http://www.cnblogs.com/zehrry/p/3239912.html">【分享】利用豆瓣API根据ISBN查询图书信息</a></p>
+						<p>【黄可庆推荐】推荐理由：图书管理系统有利用到</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html">自适应网页设计</a></p>
+						<p>【白林林推荐】推荐理由：程序员必备技能</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://blogread.cn/it/article/3065?f=wb">微博的推荐系统</a></p>
+						<p>【白林林推荐】推荐理由：教常用的功能值得研究</p>
+						<hr />
+					</div>
+					
+				</section>
+			</section>
+			<section data-background="" data-transition="cube">
+				<section class="programmer" data-background="images/programmer.jpg">
+					<h2>程序员在路上</h2>
+				</section>
+				<section>
+				
+					<div>
+					成熟的第一个标志，就是学会减少幻想却保留希望，善待眼下仍憧憬未来。美好的未来会到来，因为你用每一个完美的今天堆积着。——艾明雅</div>
+				</section>
+				<section>平和的人，放得下看得开，想得明白，过得洒脱。能容，能忍，能让，能原谅，平心静气。一个人，若思想通透了，行事就会通达，内心就会通泰，有欲而不执著于欲，有求而不拘泥于求，活得洒脱，活得自在。活得平和的人，心底踏实安详。</section>
+				<section>
+					做事要低头，沉得下多少心思，受得了多少忍耐，决定你能做何事；做人要抬头，承得住多少目光，抗得了多少压力，决定你能做何人。
+				</section>
+			</section>
+			<section>
+				Thanks!
+			</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				width: 1300,
+    				height: 700,
+    				margin: 0.1,
+    				minScale: 0.2,
+    				maxScale: 1.0,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
