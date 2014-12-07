@@ -1,6 +1,4 @@
-
 5.MainActivity代码
-
 
     ```java
     package me.shyboy.swipelayout;
@@ -16,10 +14,5 @@
 	import android.widget.TextView;
 	import java.util.ArrayList;
 	import java.util.List;
-
-
-
-
   ok，一个和QQ滑动删除类似的Demo就这样诞生了
-
 [Github Demo下载](https://github.com/shyboooy/SwipeLayout)

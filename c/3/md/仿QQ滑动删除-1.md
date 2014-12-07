@@ -1,9 +1,6 @@
 2.实现原理:用HorizontalScrollView作为ListView的item，然后让内容区的宽度和屏幕宽度一样，把操作区挤出去，就可以实现这个功能了。
-
 3.先写前端布局文件
-
   * listView的item布局文件
-  
 
    	```markup
     <!--item_swipe-->

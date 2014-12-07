@@ -1,7 +1,4 @@
-
 * item操作区的布局文件(图示的item的红色部分
-
-
 	```markup
 	<?xml version="1.0" encoding="utf-8"?>
 	<LinearLayout
