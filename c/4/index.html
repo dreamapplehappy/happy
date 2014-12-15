@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Enjoy Sharing</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.cover h1{
+				margin-top: -320px;
+				margin-left: 200px;
+				color: #FFF;
+				width: 100px;
+				font-size: 90px;
+				text-shadow: 10px 10px 20px #333;
+			}
+			.cover p{
+				color: #FFF;
+				position: 300px 400px;
+			}
+			.cover div.footer{
+				position: absolute;
+				color: #FFF;
+				bottom: -300px;
+				left: 200px;
+				font-size: 30px;
+			}
+
+			.cover-back{
+				position: relative;
+				float: left;
+			}
+			.cover-back h6{
+				font-size: 30px;
+				text-align: left;
+				color: #000;
+				position: 600px 200px;
+			}
+
+			.editor-note{
+			}
+
+			.editor-note h3{
+				color: #FFF;
+				text-shadow: 10px 10px 10px #000;
+			}
+
+			.editor-note div p{
+				/*float: left;*/
+				/*text-align: left;*/
+				margin-left:-100px;
+				text-indent: 36px;
+				color: #FFF;
+				text-shadow: 10px 10px 9px #000;
+			}
+			.contents div{
+				float: left;
+				margin-left: -200px;
+			}
+			.contents div h3{
+				margin-top: -100px;
+				color: #000;
+			}
+			.contents div a{
+				display: block;
+				margin-top: 20px;
+				color: #000 !important;
+				text-align: left;
+				text-indent: 150px;
+			}
+			.contents div a:hover{
+				font-size: 39px;
+				text-shadow: 10px 10px 10px #333 !important;
+			}
+
+			.class h2{
+				margin-top: 200px;
+			}
+			.chapter h2{
+				margin-top: 200px;
+			}
+			.chapter h2.technology{
+				margin-top: 200px;
+				float: right;
+			}
+			.programmer h2{
+				margin-top: -200px;
+				color: #000;
+			}
+
+			.md{
+				text-align: left !important;
+				font-size: 25px !important;
+			}
+			pre.wxy{
+				width: 100% !important;
+				height: 100% !important;
+			}
+			.code p{
+				text-align: left !important;
+			}
+			pre code{
+				font-size: 25px !important;
+				line-height: 25px !important;
+			}
+			div.resources p{
+				text-align: left;
+			}
+			
+		</style>
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<section class="cover" data-background="images/cover.jpg" data-transition="linear" data-background-transition="slide">
+				<h1 >创刊</h1>
+				<p >站在我们的肩膀上,你可以看得更远</p>
+				<div class="footer" >
+					<div class="issue">第四期</div>
+					<div class="publish">制作：软件工程创新实验班</div>
+				</div>
+			</section>
+			<section class="cover-back" data-background="images/2.jpg"  data-transition="linear" data-background-transition="slide">
+				<h6>编委会：罗鹏展 谢俊杰</h6>
+				<h6>责任编辑：黄可庆</h6>
+				<h6>期数：第四期</h6>
+				<h6>出刊日期：2014-12-14</h6>
+				<h6>服务邮箱：406004072@qq.com</h6>
+			</section>
+			<section class="editor-note" data-background="images/editor-note.jpg" data-transition="linear" data-background-transition="slide">
+				<h3>编者寄语</h3>
+				<div>
+					<p>&nbsp;&nbsp;先做自己心中想要的我</p>
+					<p>&nbsp;&nbsp;再做别人眼中最好的你</p>
+				</div>
+			</section>
+
+			<section class="contents" data-background="images/contents.jpg">
+				<div class="c-right">
+					<h3>目录</h3>
+					<a href="#/4/0">&#2752 团队项目计划</a>
+					<a href="#/5/0">&#2752 框架解读</a>
+					<a href="#/6/0">&#2752 技术交流</a>
+					<a href="#/7/0">&#2752 资源推荐</a>
+					<a href="#/8/0">&#2752 Jeff Dean的"故事"</a>
+				</div>
+			</section>
+
+			<section  data-transition="cube">
+				<section class="class" data-background="images/class.jpg">
+						<h2>团队项目计划</h2>
+				</section>
+				
+				<section data-markdown>
+					<script type="text/template">
+###图书管理系统
+团队成员：黄可庆 陈轲 沈之川 白林林
+
+---
+##12.8-12.14
+
+- 网页端先完成二维码功能供移动端管理员平台测验
+- 网页端按照新的api文档修改功能
+- 移动端查漏补缺并开始美化
+
+##12.15-12.21
+
+- 制作大赛用ppt
+- 走一遍流程无误后发布
+
+					</script>
+					
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### OnelineCode 
+团队成员：刘铁 王雪莹
+
+---
+
+## 本周已完成内容
+<blockquote>
+前端基本上完成
+后端登陆登出 增删改查等等
+</blockquote>
+
+## 下周要完成内容
+<blockquote>
+前端页面布局调整
+后端防sql注入
+文件上传下载</blockquote>
+    </script>
+					
+
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### Sharey
+团队成员：谢俊杰 李金祥 白林林 钟云昶 罗鹏展 彭雅丽
+
+---
+
+### 本周已完成内容 
+
+1. 楼层式的评论系统
+2. 通知系统（当有人评论伱的post，或回复伱的评论时）
+3. 投票系统（对post comment投票，并会自动按投票刷新排序）
+4. 用户登陆改良
+
+<br />
+### 下周计划完成任务
+
+1. 接入第三方api github 微博
+    </script>		
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### 快速测试系统
+团队成员：吴伟、章晨昱、白林林、彭雅丽、郑齐阳、黄可庆
+
+---
+
+### 本周已完成内容 
+
+1. 前后端的完全整合
+2. 项目的细节调整，bug修复
+
+<br />
+### 下周计划完成任务
+
+1. 前端界面美化，功能完善
+2. 修复部分bug
+3. 手机端界面优化，功能补全
+    </script>		
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### 签到系统
+团队成员：刘宏志、许鹏飞
+
+---
+
+### 本周已完成内容 
+
+1. 完成所有任务
+
+<br />
+### 下周计划完成任务
+
+1. 优化界面
+2. 代码重构
+<br />
+备注:以后任务和得分点无关
+    </script>		
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### 投票提议系统
+团队成员：罗鹏展，谢俊杰，程彦，王雪莹，许鹏飞
+
+---
+
+### 本周已完成内容 
+
+1. 投票界面的初步完成
+2. 提议界面的初步完成
+
+<br />
+### 下周计划完成任务
+
+1. 投票界面和提议界面添加相应的动画，人性化的设计
+    </script>		
+				</section>
+				<section data-markdown>
+				 <script type="text/template">
+### HTML5游戏项目
+团队成员：段鹏飞、黄可庆、边涛
+
+---
+
+本周已完成内容 
+- HTML5 游戏制作的学习
+ - canvas 绘图的学习
+ - createjs 的学习
+- PhoneGap 的学习
+ - PhoneGap 开发环境的搭建
+ - 基本打包流程的学习
+- 简单 HTML5 游戏的 Demo
+ - 围住神经猫
+ - 比比谁最色
+
+下周计划完成任务
+- HTML5 API 的学习
+ - 数据通信
+ - 本地数据存储
+ - ……
+- PhoneGap API 的学习
+ - 调用手机地理位置
+ - 调用手机声音
+ - 本地数据存储
+ - ……
+    </script>		
+				</section>
+			</section>
+
+			<section data-background="">
+				<section class="chapter" data-background="images/ubuntu.jpg" data-transition="linear">
+					<h2 >框架解读</h2><br/>Laravel-学习资料总汇<br/>——许鹏飞
+				</section>
+				<section data-markdown="md/LARAVEL-学习资料总汇.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="md/LARAVEL-学习资料总汇-2.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				<section class="md" data-markdown="md/LARAVEL-学习资料总汇-3.md"
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+				
+			</section> 
+			<section data-background="" data-transition="cube">
+				<section class="chapter" data-background="images/technology.jpg">
+					<h2 class="technology" style="text-align:right">技术交流<br/>AngularJS+UI Router(1)<br/>[多步表单的实现]——罗鹏展</h2>
+				</section>
+				<section data-markdown="md/angularjs+uiRouter.md" class="md" 
+					data-separator="^\n\n\n"
+					data-vertical="^\n\n"
+					data-notes="^Note:"
+					data-charset="utf-8">
+				</section>
+			</section>
+			<section data-background="" data-transition="cube">
+				<section data-background="images/resources.jpg">
+					<h2>资源推荐</h2>
+				</section>
+				<section>
+					<div class="resources">
+						<p><a href="https://www.zybuluo.com/cpt/note/54309">Mootools框架(JS 框架) </a></p>
+						<p>【曹平涛推荐】推荐理由：Mootools JQuery比较，JQuery之多宗罪</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://blog.sharey.me/wei-ming-ming-2/">Meteor模板定义 </a></p>
+						<p>【钟云昶推荐】推荐理由：正在用</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://blog.sharey.me/accounts/">Meteor 用户登陆与登出</a></p>
+						<p>【钟云昶推荐】推荐理由：正在用</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://segmentfault.com/blog/news/1190000002418920">网站性能优化工具大全</a></p>
+						<p>【白林林推荐】推荐理由： 网站性能优化（WPO）已经成为一个非常重要的话题了，而相关技能也是对前端开发工程师的重要技术要求之一。 </p>
+						<hr />
+					</div>
+				</section>
+				<section>
+					<div class="resources">
+						<p><a href="http://www.cnblogs.com/leefreeman/p/3993449.html">大型网站系统架构的演化</a></p>
+						<p>【白林林推荐】推荐理由：</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://www.duanpengfei.com/ubuntu-ji-ben-kai-fa-huan-jing-pei-zhi/">ubuntu 基本使用与开发环境配置</a></p>
+						<p>【段鹏飞推荐】推荐理由：节省大家折腾的时间</p>
+						<hr />
+					</div>
+					<div class="resources">
+						<p><a href="http://www.cnblogs.com/Darren_code/archive/2013/01/04/impressjs.html">impress.js初体验</a></p>
+						<p>【边涛推荐】推荐理由：前端酷炫利器</p>
+						<hr />
+					</div>
+					
+				</section>
+			</section>
+			<section data-background="" data-transition="cube">
+				<section class="programmer" data-background="images/programmer.jpg">
+					<h2>Jeff Dean的"故事"</h2>
+				</section>
+				<section>
+				
+					<div>
+					Jeff Dean是google的大牛，主持google各种牛逼分布式系统的设计，比如Mapreduce之类的，关于大神的传说，如同春哥一样多，当然，有些传说只有程序员能明白！</div>
+				</section>
+				<section style="width:850px;text-align:left"><p>1.编译器从不警告Jeff Dean，只有Jeff警告编译器。</p><p>2.Jeff Dean的编码速度在2000年底提高了约40倍，因为他换了USB2.0的键盘。 </p><p>3. Jeff在提交代码前都会编译一遍，不过是为了检查编译器和链接器有没有出bug。 </p><p>4.Jeff Dean发送以太网封包从不会发生冲突，因为其他封包都吓得逃回了网卡的缓冲区里。 </p></section>
+				<section style="width:850px;text-align:left">
+					<p>5.因为对常数级的时间复杂度感到不满意，Jeff Dean发明了世界上第一个O(1/n)算法。 </p><p>6.有一次Jeff Dean去旅行，期间Google的几个服务神秘地罢工了好几天。这是真事。 </p><p>7.Jeff Dean被迫发明了异步API因为有一天他把一个函数优化到在调用前就返回结果了。  </p><p>8.Jeff Dean首先写的是二进制代码，然后再写源代码作为文档。  </p>
+				</section>
+			</section>
+			<section>
+				Thanks!
+			</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				width: 1300,
+    				height: 700,
+    				margin: 0.1,
+    				minScale: 0.2,
+    				maxScale: 1.0,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
