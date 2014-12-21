@@ -1,0 +1,599 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 0.9.8-3
+    site: https://github.com/ksky521/nodePPT
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>实验班周刊 第五期</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt2.0.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    <link rel="stylesheet" media="print" href="./css/pdf.css">
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide fill" style="background-image:url('http://attachments.gfan.com/forum/attachments2/day_111012/111012112438e068e65c2c3068.jpg')"><section class="slide-wrapper"><article class="flexbox vleft">
+<h1>创刊 </h1>
+<h3>业精于勤，而荒于嬉； 行成于思，而毁于随。</h3>
+<div class="bottom-right">
+<p>第三期</p>
+制作:软件工程创新实验班
+</div><style>
+    .bottom-right{
+        margin-top: 400px;
+        margin-left: 600px;
+        color: red
+    }
+    .bottom-right p{
+        margin-left: 100px;
+    }
+</style>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>操作提示</h1>
+<hr>
+<p>文中的<strong>加粗</strong>和<em>em</em>字体会动画哦~
+按下【H】键查看效果
+按下键盘【N】键测试下note，</p>
+<h2>使用画笔</h2>
+<h3>使用画笔做标记哦~你也可以随便作画啊！</h3>
+<hr>
+<p>按下键盘【P】键。按下鼠标左键，在此处乱花下看看效果。</p>
+<p>按下键盘【C】键。清空画板</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>宽度不够？？</h2>
+<p>按下键盘【W】键，切换到更宽的页面看效果，第二次按键返回</p>
+<h2>使用overview模式</h2>
+
+</hgroup><article>
+
+<p>按下键盘【O】键。看下效果。</p>
+<p>在overview模式下，方向键下一页，【enter】键进入选中页</p>
+<p>或者按下键盘【O】键，退出overview模式</p>
+
+</article></section></slide>
+<slide class="slide fill" style="background-image:url('http://tupian.36992.com/2013/lxy/11/1.jpg')"><section class="slide-wrapper"><article>
+<p>编委会：罗鹏展 谢俊杰</p>
+<p>责任编辑：刘铁</p>
+<p>封面设计：刘铁</p>
+<p>期数：第五期</p>
+<p>出刊日期：2014-12-20</p>
+<p>服务邮箱：575821921@qq.com</p>
+
+</article></section></slide>
+<slide class="slide fill" style="background-image:url('http://pic.4j4j.cn/upload/pic/20130621/e62f47ea50.jpg')"><section class="slide-wrapper"><article class="flexbox vleft">
+<h1>编者寄语 </h1>
+<p>我们什么都没有，唯一的本钱就是青春。梦想让我们与众不同，奋斗让我们改变命运！</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>目录</h1>
+
+</hgroup><article>
+
+<blockquote>
+<ul class="bounceIn">
+<li><a href="#6" target="_blank">分享链接</a></li>
+<li><a href="#7" target="_blank">用AngularJS构建自己的组件<strong>原创</strong></a></li>
+<li><a href="#13" target="_blank">分组<strong>原创</strong></a></li>
+<li><a href="#19" target="_blank">laravel-复习-路由篇<strong>原创</strong></a></li>
+<li><a href="#28" target="_blank">UBUNTU 14.04 下安装NGINX以及PHP配置<strong>原创</strong></a></li>
+</ul>
+</blockquote>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>分享链接</h1>
+
+</hgroup><article>
+
+<blockquote>
+<ul>
+<li><a href="http://www.weibo.com/p/1001603788054404964448" target="_blank">Ruby之父松本行弘又开发了一种新的脚本语言Streem</a></li>
+<li><a href="http://ourjs.com/detail/54856a0d0dad0fbb6d000016" target="_blank">为什么io.js要从Node.js中分裂出来</a></li>
+<li><a href="http://happypeter.github.io/tealeaf-http/" target="_blank">http 下午茶</a></li>
+<li><a href="http://www.csdn.net/article/2013-10-15/2817187-3-ways-preload-images-css-javascript-ajax" target="_blank">利用CSS、JavaScript及Ajax实现图片预加载的三大方法</a></li>
+<li><a href="http://www.cnblogs.com/tomxu/archive/2011/12/15/2288411.html" target="_blank">深入理解JavaScript系列</a></li>
+<li><a href="http://www.qianduan.net/css-to-achieve-the-vertical-center-of-the-five-kinds-of-methods.html" target="_blank">CSS实现垂直居中的五种方法</a></li>
+</ul>
+</blockquote>
+
+</article></section></slide>
+<slide class="slide" data-transition="newspaper"><section class="slide-wrapper"><hgroup>
+<h1>用AngularJS构建自己的组件--By 罗鹏展</h1>
+
+</hgroup><article>
+
+<h2>先看演示地址吧<a href="https://rawgit.com/dreamapplehappy/expander/master/index.html" target="_blank">expander-demo</a></h2>
+<h2>介绍优点：</h2>
+<ul>
+<li>方法简单</li>
+<li>模块化、方便维护</li>
+<li>制作成组件可以复用，在任意别的网站中也可以用<h2>准备工作：</h2>
+</li>
+<li>expander.html</li>
+<li>expander.js</li>
+<li>expander.css</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="newspaper"><section class="slide-wrapper"><article>
+<h2>关于expander.html</h2>
+<p>先看代码吧：</p>
+<pre><code>/*---ng-app表示angularjs程序的开始---*/
+&lt;html lang=&quot;en&quot; ng-app=&quot;myModule&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Expander&lt;/title&gt;
+    /*---引入外部的bootstrap文件和expander.css文件---*/
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;expander.css&quot;&gt;
+    /*---引入angularjs文件和外部的expander.js文件---*/
+    &lt;script src=&quot;angular.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;expander.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="newspaper"><section class="slide-wrapper"><article>
+<pre><code>/*---控制器myController控制整个body---*/
+&lt;body ng-controller=&quot;myController&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;expander-container&gt;
+            &lt;expander  ng-repeat=&quot;expander in expanders&quot;  
+                       expander-title=&quot;expander.title&quot;&gt;{{expander.text}}
+            &lt;/expander&gt;
+        &lt;/expander-container&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="newspaper"><section class="slide-wrapper"><article>
+<h3>更多细节的讲解：</h3>
+<ul>
+<li>expander-container和expander是两个指令</li>
+<li>expander-title是添加到expander上的属性<h2>关于expander.js</h2>
+先看代码吧<pre><code>/*声明自己的模块myModule*/
+var myModule = angular.module(&#39;myModule&#39;, []);
+myModule.controller(&#39;myController&#39;, [&#39;$scope&#39;, function($scope){
+  $scope.expanders = [
+  {title: &#39;Hello World&#39;, text: &#39;是不是除了Hello World，你什么也不会写？&#39;},
+  {title: &#39;Emberjs&#39;, text: &#39;AngularJS很厉害吗？我不觉得。-Emberjs&#39;},
+  {title: &#39;AngularJS&#39;, text: &#39;楼上说话要注意一点!&#39;}
+  ];
+}]);
+</code></pre></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="newspaper"><section class="slide-wrapper"><article>
+<pre><code>myModule.directive(&#39;expanderContainer&#39;, function(){
+    return {
+        restrict: &#39;AE&#39;,
+        template: &#39;&lt;div ng-transclude&gt;&lt;/div&gt;&#39;,
+        replace: true,
+        transclude: true,
+        controller: function(){
+            /*声明一个数组，用来存放下面expander指令生成的内容*/
+            var expanders = [];
+            /*添加expander指令生成的内容*/
+            this.addExpander = function(expander){
+                expanders.push(expander);
+            }
+            /*对选择中的expander进行一些操作*/
+            this.getOpend = function(selectedExpander){
+                angular.forEach(expanders, function(expander){
+                    if(selectedExpander != expander){
+                        expander.show = false;
+                    }
+                });
+            }
+
+        }
+    };
+});
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="newspaper"><section class="slide-wrapper"><article>
+<pre><code>myModule.directive(&#39;expander&#39;, function(){
+    return {
+    /*作用域的绑定*/
+        scope: {title: &#39;=expanderTitle&#39;},
+    /*声明依赖*/
+        require: &#39;^?expanderContainer&#39;,
+        restrict: &#39;AE&#39;,
+        template: &#39;&lt;div&gt;&#39;+
+                &#39;&lt;div class=&quot;title&quot; ng-click=&quot;toggle()&quot;&gt;{{title}}&lt;/div&gt;&#39;+
+                &#39;&lt;div class=&quot;text&quot; ng-show=&quot;show&quot; ng-transclude&gt;&lt;/div&gt;&#39;+
+                &#39;&lt;/div&gt;&#39;,
+        replace: true,
+        transclude: true,
+    /*在连接阶段进行操作*/
+        link: function(scope, iElm, iAttrs, controller) {
+            scope.show = false;
+
+            controller.addExpander(scope);
+
+            scope.toggle = function toggle(){
+                scope.show = !scope.show;
+                controller.getOpend(scope);
+            }
+        }
+    };
+});
+</code></pre>
+</article></section></slide>
+<slide class="slide" slide data-transition="glue"><section class="slide-wrapper"><article>
+<h2>类QQ分组--By 刘铁</h2>
+<p class="pull-left"><span>看到罗鹏展投的稿件,我也不淡定了,他用框架写,那我就自己写一个类似的 <span></p>
+<p class="pull-left"><span> 功能和他的几乎一样,唯一知识点: <span></p>
+<blockquote>
+<ul class="pull-left">
+<li>闭包</li>
+</ul>
+</blockquote>
+<p class="pull-left"><span><a href="https://rawgit.com/AlSodium/QQ-/master/QQ.html" target="_blank">demo</a> <span></p>
+
+</article></section></slide>
+<slide class="slide" slide data-transition="glue"><section class="slide-wrapper"><article>
+<pre><code class="html">&lt;style type=&quot;text/css&quot;&gt;
+            .div1{
+                    width: 200px;background-color: #000000;
+                }
+                .li{
+                    text-align: center;border: 1px solid white;cursor: pointer;
+                    color: #FFF;
+                }
+                li,.li{
+                    list-style: none;
+                }
+                .hidden,.show{
+                    height: 200px;background-color: white;text-align: center;
+                    padding-top: 100px;
+                }
+                .hidden{
+                    display: none;
+                }
+                .show{
+                    display: block;
+                }
+                .hidden li{
+                    margin: 5px ;
+                }
+&lt;/style&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" slide data-transition="glue"><section class="slide-wrapper"><hgroup>
+<h2>body中</h2>
+
+</hgroup><article>
+
+<pre><code class="html">&lt;div class=&quot;div1&quot;&gt;
+            &lt;div class=&quot;div&quot;  &gt;
+                &lt;li class=&quot;li&quot;&gt;即使通讯工具&lt;/li&gt;
+                &lt;div class=&quot;hidden&quot;&gt;
+                    欢迎使用
+                &lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;div&quot;  &gt;
+                &lt;li class=&quot;li&quot;&gt;总裁办公室&lt;/li&gt;
+                &lt;div class=&quot;hidden&quot;&gt;
+                    &lt;li&gt;第一个总裁&lt;/li&gt;
+                &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" slide data-transition="glue"><section class="slide-wrapper"><hgroup>
+<h2>script</h2>
+
+</hgroup><article>
+
+<pre><code class="html">&lt;script type=&quot;text/javascript&quot;&gt;
+            var div=document.getElementsByClassName(&#39;div&#39;);
+            for (var i=0;i&lt;div.length;i++) {
+
+                div[i].onclick=(function(i){
+                    return function(){
+                        if(div[i].lastChild.className==&#39;hidden&#39;)
+                            div[i].lastChild.className=&#39;show&#39;;
+                        else
+                            div[i].lastChild.className=&#39;hidden&#39;;
+                    }
+                })(i)
+
+            }
+&lt;/script&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" slide data-transition="glue"><section class="slide-wrapper"><article>
+<p>当时我在做的时候,就被闭包这块难住了.</p>
+<p>那时候我想循环给每一个标题绑定一个<code>onclick</code>事件:</p>
+<pre><code class="html">for(var i=0;i&lt;div.length;i++){
+    div[i].onclick=function(){
+        alert(i);
+    }
+}
+</code></pre>
+<p>这样做,当网页打开的时候就开始<code>alert</code>
+然后点击任何一个标题,会发现弹出来的都是最后一个数组的下标号.</p>
+<p>这个问题在这里我找到了答案:</p>
+<p><a href="http://segmentfault.com/blog/fishenal/1190000000471569" target="_blank">http://segmentfault.com/blog/fishenal/1190000000471569</a>
+改良之后就是上面代码中的样子了.</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>还有一点就是<code>lastchild</code></p>
+<p>如果中间有空格,或者回车,在某些浏览器都会认为是文本节点.</p>
+<p>所以上面代码中可以看到有两个闭合div标签是挨在一起的</p>
+<p>目的就是防止<code>lastchild</code>不是我们想要的节点</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Closures" target="_blank">闭包</a>详情请点击</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><hgroup>
+<h2>laravel-复习-路由篇--By 许鹏飞</h2>
+
+</hgroup><article>
+
+<h3>以下基本上以get为例子</h3>
+<h5>1.首先最基础的路由</h5>
+<pre><code class="php">Route::get(&#39;/&#39;,function(){
+        return &#39;hello world&#39;;
+    });
+</code></pre>
+<p>代码解释:
+以<code>get</code>方式跳转到<code>/</code>（本地通常为localhost/） 然后调用function，输出‘hello world’
+通常情况下我们不会简单的返回一个<code>function()</code>，通常情况会有如下操作</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>2.路由绑定控制器</h5>
+<p>绑定控制器的作用：实现mvc模式的开发   </p>
+<pre><code class="php">Route::get(&#39;user&#39;, ‘userController@index()’);
+</code></pre>
+<p>代码解释：
+同理跳转<code>user</code>然后调用<code>Controller</code>文件夹下的<code>userController</code>类中的<code>index</code>方法</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>3.路由使用参数</h5>
+<p>使用参数的目的：
+很多时候跳转的时候带参数会带来很多方便，如下</p>
+<pre><code class="php">Route::get(&#39;user/{name}&#39;,&#39;userController@index()&#39;);
+</code></pre>
+<p>代码解释：
+同理此处跳转<code>user/{name}</code>,而<code>{name}</code>的值来自于<code>get</code>得到的参数，比如查看谋个用户时通过<code>user/{name}</code>来获取用户比<code>user/xxxx</code>这种方式来的更为方便</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>4.路由使用默认参数</h5>
+<p>当然我们有时候需要设置默认值，可以通过以下方式来设置</p>
+<pre><code class="php">Route::get(&#39;user/{name?}&#39;, function($name = null){
+        return $name；
+    });
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>5.路由使用正则表达式限定参数</h5>
+<p>限定参数的作用：具体待续</p>
+<pre><code class="php">Route::get(&#39;user/{name}&#39;, function($name){
+    })-&gt;where(&#39;name&#39;, &#39;[A-Za-z]+&#39;);
+
+    Route::get(&#39;user/{id}&#39;, function($id){
+    })-&gt;where(&#39;id&#39;, &#39;[0-9]+&#39;);
+</code></pre>
+<p>代码解释：
+同理此处的<code>{name}</code>也是一个参数，二后面的<code>where(&#39;&#39;,&#39;&#39;)</code>则是限定条件</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>6.录用使用数组来限定多个参数</h5>
+<pre><code class="php">Route::get(&#39;user/{id}/{name}&#39;, function($id, $name){
+        //
+    })-&gt;where(array(&#39;id&#39; =&gt; &#39;[0-9]+&#39;, &#39;name&#39; =&gt; &#39;[a-z]+&#39;))
+</code></pre>
+<p>此处也同上容易理解</p>
+<p>此处看不懂可以忽略，因为本人页不是很确定这样说对不对
+之所一可以直接调用<code>Controller</code>,是因为<code>composer.json</code>已经加载<code>Controller</code>，以后遇到类似直接调用的可以去查看<code>composer.json</code></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>7.定义全局模式</h5>
+<p>如果希望在全局范围用指定正则表达式限定路由参数，可以使用 pattern 方法：</p>
+<pre><code class="php">Route::pattern(&#39;id&#39;, &#39;[0-9]+&#39;);
+    Route::get(&#39;user/{id}&#39;, function($id){
+    // Only called if {id} is numeric.
+    });
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>8.访问路由参数</h5>
+<p>    Route::filter(&#39;foo&#39;, function(){
+        if (Route::input(&#39;id&#39;) == 1){
+            echo &quot;hello&quot;;
+        }
+    });
+代码解释：此处<code>‘foo’</code>过滤器将会访问<code>调用此过滤器</code>的参数<code>id</code>
+如果<code>id==1</code>则输出&quot;hello&quot;;</p>
+<h5>定义过滤器</h5>
+<pre><code class="php">Route::filter(&#39;old&#39;, function(){
+        if (Input::get(&#39;age&#39;) &lt; 200){
+        return Redirect::to(&#39;home&#39;);
+    }});
+</code></pre>
+<p>代码解释：过滤器名字为<code>old</code>,执行<code>function()</code>,如果得到的<code>age&lt;200</code>那么重定位到<code>home</code></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><article>
+<h5>为路由绑定使用过滤器</h5>
+<p>过滤器的作用：限制对应用程序中某些功能访问,比如对于需要验证才能访问的功能就非常有用</p>
+<pre><code class="php">Route::get(&#39;admin/home&#39;,
+            [&#39;as&#39;=&gt;&#39;admin.home&#39;,&#39;before&#39;=&gt;&#39;adminFilter&#39;,function(){
+        echo &quot;hello world&quot;
+    }])
+</code></pre>
+<p>代码解释：此处跳转<code>admin\home</code>,其中<code>&#39;as&#39;=&gt;&#39;admin.home&#39;</code>是别名。然后在跳转之前会先运行名为<code>adminFilter</code>的过滤器，如果过滤器没有阻止该路由则运行<code>function</code>,否则就不会运行<code>function()</code>,过滤器定义在<code>filters.php</code>文件中,位于<code>routes.php</code>下面。</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<h2>UBUNTU 14.04 下安装NGINX以及PHP配置--By 许鹏飞</h2>
+<p>1、 安装 Nginx</p>
+<pre><code>sudo apt-get install nginx
+</code></pre><p>2、 启动Nginx</p>
+<pre><code>service nginx start
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>3、 因为我的ubuntu客户机还装了apache,所以修改了端口</p>
+<pre><code>sudo vi /etc/nginx/sites-available/default ``` &lt;br&gt;
+    ......
+       server {
+        listen 8080 default_server;
+        listen [::]:8080 default_server ipv6only=on;
+
+        root /var/www/html;
+        index index.php index.html index.htm;
+
+        # Make site accessible from http://localhost/
+        server_name localhost; 
+    ......
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>4、 安装php-fpm</p>
+<pre><code>sudo apt-get install php5-fpm
+</code></pre><p>5、修改nginx虚拟主机配置文件, 让nginx支持php</p>
+<pre><code>sudo vi /etc/nginx/sites-available/default
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>6、修改以下部分代码,去掉其注释</p>
+<pre><code>location ~ \.php$ {
+
+    #    fastcgi_split_path_info ^(.+\.php)(/.+)$;
+    #    # NOTE: You should have &quot;cgi.fix_pathinfo = 0;&quot; in php.ini
+    #
+    #    # With php5-cgi alone:
+        fastcgi_pass 127.0.0.1:9000;
+    #    # With php5-fpm:
+    #    fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
+</code></pre><p>注意：如果后面进入<code>info.php</code>时提示<code>502 错误</code>，可以查看
+<code>/etc/php5/fpm/pool.d/www.conf</code> 的<code>listen</code></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>当<code>listen = /var/run/php5-fpm.sock</code>时可以把
+<code>fastcgi_pass 127.0.0.1:9000;</code>注释掉改为如下</p>
+<pre><code>location ~ \.php$ {
+
+    #    fastcgi_split_path_info ^(.+\.php)(/.+)$;
+    #    # NOTE: You should have &quot;cgi.fix_pathinfo = 0;&quot; in php.ini
+    #
+    #    # With php5-cgi alone:
+    #    fastcgi_pass 127.0.0.1:9000;
+    #    # With php5-fpm:
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
+</code></pre>
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>7、重新加载nginx</p>
+<pre><code>sudo /etc/init.d/nginx reload
+</code></pre><p>8、创建info.php：</p>
+<pre><code>vi /usr/share/nginx/www/info.php
+    &lt;?php echo phpinfo()?&gt;
+</code></pre><p>然后再打开浏览器输入：<code>localhost:8080/phpinfo.php</code>
+<code>注意</code>:我的改成了8080端口,不同的端口输入不同
+如果能正常显示php配置信息，表示php已经安装成功。</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+
+</article></section></slide>
+        <slide class="slide thank-you-slide segue nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <h2>Q &amp; A</h2>
+                <h3>&lt;Thank You!&gt;</h3>
+            </article>
+        </slide>
+        <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+              <h2 style="color: white;">Powered By nodePPT v0.9.8-3</h2>
+            </article>
+          </slide>
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = location.pathname.split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'cover-diamond',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/hljs-0.8.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="./js/demo.js"></script>
+<link rel="stylesheet" href="./css/demo.css">
+</body>
+</html>
